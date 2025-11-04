@@ -72,6 +72,7 @@ RUN for repo in \
     https://github.com/chflame163/ComfyUI_LayerStyle_Advance.git \
     https://github.com/cubiq/ComfyUI_IPAdapter_plus.git \
     https://github.com/bash-j/mikey_nodes.git \
+    https://github.com/ClownsharkBatwing/RES4LYF.git \
     https://github.com/1038lab/ComfyUI-JoyCaption.git \
     https://github.com/sipie800/ComfyUI-PuLID-Flux-Enhanced.git \
     https://github.com/chrisgoringe/cg-use-everywhere.git \
