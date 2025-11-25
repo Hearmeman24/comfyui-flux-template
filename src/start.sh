@@ -143,6 +143,12 @@ if [ "$download_flux_krea" == "true" ]; then
   download_model "https://huggingface.co/black-forest-labs/FLUX.1-Krea-dev/resolve/main/flux1-krea-dev.safetensors" "$DIFFUSION_MODELS_DIR/flux1-krea-dev.safetensors"
 fi
 
+if [ "$download_flux2" == "true" ]; then
+  download_model "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/diffusion_models/flux2_dev_fp8mixed.safetensors" "$DIFFUSION_MODELS_DIR/flux2_dev_fp8mixed.safetensors"
+  download_model "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/text_encoders/mistral_3_small_flux2_fp8.safetensors" "$TEXT_ENCODERS_DIR/mistral_3_small_flux2_fp8.safetensors"
+  download_model "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors" "$VAE_DIR/flux2-vae.safetensors"
+fi
+
 # Download additional models
 echo "📥 Starting additional model downloads..."
 
