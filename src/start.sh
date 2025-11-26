@@ -64,6 +64,12 @@ else
     echo "Directory already exists, skipping move."
 fi
 
+echo "Updating ComfyUI to latest version..."
+cd "$COMFYUI_DIR"
+git checkout master
+git pull
+echo "ComfyUI updated successfully!"
+
 echo "Downloading CivitAI download script to /usr/local/bin"
 git clone "https://github.com/Hearmeman24/CivitAI_Downloader.git" || { echo "Git clone failed"; exit 1; }
 mv CivitAI_Downloader/download_with_aria.py "/usr/local/bin/" || { echo "Move failed"; exit 1; }
